@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 50px;
   padding: 20px;
   color: white;
 }
@@ -23,6 +23,76 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.parentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse
+}
+
+div.allTasks {
+  display: flex;
+  flex-direction: row;
+}
+
+div.today {
+  background: #DDD;
+}
+
+div.rose {
+  background: #FDD;
+}
+
+div.forest {
+  background: #DFD;
+}
+
+div.sea {
+  background: #D6FFFB;
+}
+
+div.taskHeader.today {
+  background: #AAA;
+}
+
+div.taskHeader.rose {
+  background: #FAA;
+}
+
+div.taskHeader.forest {
+  background: #AFA;
+}
+
+div.taskHeader.sea {
+  background: #89FFF4;
+}
+
+div.taskContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  min-height: 200px;
+  max-height: 800px;
+  min-width: 250px;
+  max-width: 800px;
+}
+
+div.taskHeader {
+  padding: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+div.taskItem {
+  padding: 5px;
+  margin: 5px 20px 0px 20px;
 }
